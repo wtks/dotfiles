@@ -1,0 +1,9 @@
+! Gruvbox color scheme
+#include "gruvbox-rofi/gruvbox-dark.theme"
+
+rofi.sidebar-mode: true
+rofi.fixed-num-lines: true
+
+rofi.modi: combi,drun,window,ssh,run
+rofi.combi-modi: window,drun
+rofi.show: combi
