@@ -111,3 +111,9 @@ set wrapscan
 set ignorecase
 set smartcase
 nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
+
+"----------------------------------------
+" キーマップ
+"----------------------------------------
+imap <C-j> <esc>
+noremap! <C-j> <esc>
