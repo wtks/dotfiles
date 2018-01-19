@@ -47,5 +47,6 @@ if [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
 
     ln -svf "$dir/.conkyrc" $HOME
     ln -svf "$dir/.Xresources" $HOME
+    ln -svf "$dir/.Xmodmap" $HOME
     ln -svf "$dir/.zprofile.linux" $HOME
 fi

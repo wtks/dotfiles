@@ -1,0 +1,13 @@
+remove Lock = Caps_Lock
+
+! CapsLock -> Control
+keycode 66 = Control_L
+! 無変換 -> ESC
+keycode 102 = Escape
+! 変換 -> ESC
+keycode 100 = Escape
+! ひらがなカタカナ -> Alt
+keycode 101 = Alt_R
+
+add Control = Control_L
+add mod1 = Alt_R
