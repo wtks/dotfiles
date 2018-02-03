@@ -24,6 +24,11 @@ fi
 
 ln -svf "$dir/.config/nvim" "$HOME/.config"
 
+if [ ! -e "$HOME/.config/ranger/" ]; then
+    mkdir "$HOME/.config/ranger"
+fi
+ln -svf $dir/.config/ranger/* "$HOME/.config/ranger/"
+
 # zplug install
 if [ ! -e "$HOME/.zplug/" ]; then
     curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
