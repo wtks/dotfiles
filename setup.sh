@@ -40,16 +40,6 @@ if [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
     ln -svf "$dir/.config/rofi" "$HOME/.config/"
     ln -svf "$dir/.config/polybar" "$HOME/.config/"
 
-    if [ ! -e "$HOME/.config/mpd/" ]; then
-        mkdir "$HOME/.config/mpd/"
-    fi
-    ln -svf "$dir/.config/mpd/mpd.conf" "$HOME/.config/mpd/"
-
-    if [ ! -e "$HOME/.ncmpcpp/" ]; then
-        mkdir "$HOME/.ncmpcpp"
-    fi
-    ln -svf "$dir/.ncmpcpp/config" "$HOME/.ncmpcpp/"
-
     ln -svf "$dir/.conkyrc" $HOME
     ln -svf "$dir/.Xresources" $HOME
     ln -svf "$dir/.Xmodmap" $HOME
