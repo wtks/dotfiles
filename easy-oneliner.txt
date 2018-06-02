@@ -30,6 +30,7 @@
 
 : Text
 [標準入力をHTMLデコード] @ | perl -MHTML::Entities -pe 'decode_entities($_);'
+[ランダムな英数20文字を生成] cat /dev/urandom | LC_CTYPE=C tr -dc '[:alnum:]' | head -c 20
 
 : File
 [カレントディレクトリ以下の.DS_Storeを削除] find ./ -name ".DS_Store" | xargs rm
