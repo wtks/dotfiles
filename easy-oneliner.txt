@@ -27,6 +27,7 @@
 #
 : Utils
 [公開鍵をクリップボードにコピー] cat ~/.ssh/id_rsa.pub | pbcopy
+[/dev/cdromをisoに変換] dd if=/dev/cdrom of=@.iso
 
 : Text
 [標準入力をHTMLデコード] @ | perl -MHTML::Entities -pe 'decode_entities($_);'

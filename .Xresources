@@ -51,12 +51,16 @@ URxvt.depth:                32
 URxvt.saveLines:            10000
 URxvt*shading:              20
 URxvt*inheritPixmap:        True
+URxvt.cursorBlink:          true
+URxvt.cursorUnderline:      true
+URxvt.fading:               40
 ! Scrollbar
 URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 
 ! Fonts
 URxvt.allow_bold:           true
+URxvt.letterSpace:          0
 URxvt*font:                 xft:RobotoMono Nerd Font:size=9:antialias=true,xft:IPAGothic
-URxvt.letterSpace:          -1
+URxvt*boldFont:             xft:RobotoMono Nerd Font:size=9:antialias=true,xft:IPAGothic
 

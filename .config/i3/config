@@ -76,6 +76,8 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+bindsym $mod+Prior workspace prev
+bindsym $mod+Next workspace next
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -147,13 +149,16 @@ client.focused_inactive #3c3836 #504945 #d5c4a1 #504945
 client.unfocused        #3c3836 #504945 #d5c4a1 #504945
 client.urgent           #7c6f64 #fabd2f #3c3836 #fabd2f
 
+assign [class="discord"] 10
+assign [class="Slack"] 10
+assign [class="Google Play Music Desktop Player"] 9
+assign [class="Mailspring"] 8
 
-bindsym $mod+Print exec deepin-screenshot
+bindsym $mod+Shift+p exec "~/.config/rofi/rofi_ps_kill"
+bindsym Print exec gnome-screenshot -w
 
 exec --no-startup-id fcitx
-exec --no-startup-id pasystray
-exec --no-startup-id parcellite -d
 exec --no-startup-id compton -G
 exec --no-startup-id conky
-exec --no-startup-id mpd
 exec --no-startup-id nitrogen --restore
+exec --no-startup-id nm-applet

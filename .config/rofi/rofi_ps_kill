@@ -1,0 +1,7 @@
+#!/bin/bash
+
+selection=`ps chxo pid,pcpu,pmem,args k args | rofi -dmenu`
+if [ "$selection" != "" ]; then
+    pid=`echo "$selection" | sed -e 's/^ [ ]*//g' | cut -d " " -f 1`
+    kill $pid
+fi
