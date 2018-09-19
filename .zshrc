@@ -1,11 +1,8 @@
-if [[ "$OSTYPE" == linux* ]]; then
-    source ~/.zprofile
-fi
-
 #-------------------------------------------------------------------------
 # Environment Variables
 #-------------------------------------------------------------------------
 export FZF_DEFAULT_OPTS="--extended --cycle --ansi --select-1 --reverse"
+export FZF_COMPLETION_TRIGGER='**'
 export EASY_ONE_FZF_OPTS="--no-sort --height 50%"
 export EASY_ONE_REFFILE="$DOTPATH/easy-oneliner.txt"
 export EASY_ONE_KEYBIND="^o"
@@ -291,3 +288,6 @@ function prompt_setup() {
 if [[ "$TERM" != linux ]]; then
     prompt_setup
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(direnv hook zsh)"
