@@ -59,15 +59,6 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 
 
 #
-# rbenv
-#
-
-if [ -e "$HOME/.rbenv" ]; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)"
-fi
-
-#
 # pyenv
 #
 
