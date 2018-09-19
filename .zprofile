@@ -9,12 +9,10 @@ else
     export EDITOR='vi'
     export VISUAL='vi'
 fi
+
 export PAGER='less'
 export DOTPATH="$(cat $HOME/.dotpath)"
-
-if [[ -z "$LANG" ]]; then
-  export LANG='en_US.UTF-8'
-fi
+export LANG='en_US.UTF-8'
 
 #
 # Paths
